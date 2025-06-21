@@ -1,0 +1,42 @@
+{
+  "books": {
+    "fantasy": [
+      {
+        "id": 1,
+        "title": "Harry Potter",
+        "author": "J.K. Rowling",
+        "poster": "https://covers.openlibrary.org/b/id/7984916-L.jpg"
+      }
+    ]
+  },
+  "movies": {
+    "action": [
+      {
+        "id": 1,
+        "title": "Inception",
+        "director": "Christopher Nolan",
+        "poster": "https://m.media-amazon.com/images/I/51s+MHVa+oL._AC_SY679_.jpg"
+      }
+    ]
+  },
+  "anime": {
+    "romance": [
+      {
+        "id": 1,
+        "title": "Your Name",
+        "creator": "Makoto Shinkai",
+        "poster": "https://cdn.myanimelist.net/images/anime/5/87048.jpg"
+      }
+    ]
+  },
+  "webseries": {
+    "comedy": [
+      {
+        "id": 1,
+        "title": "How I Met Your Mother",
+        "creator": "Carter Bays, Craig Thomas",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMTcwNjg1NDA4Nl5BMl5BanBnXkFtZTgwNTU3MzE2MjE@._V1_FMjpg_UX1000_.jpg"
+      }
+    ]
+  }
+}
