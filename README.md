@@ -30,21 +30,15 @@ A simple and flexible RESTful API built with **Node.js** and **Express** that ma
 
 ## 📁 Folder Structure
 
-UnifiedLibraryAPI/
-├── index.js
-├── data/
-│   └── data.json
-├── docs/
-│   └── screenshots/
-│       ├── post-success-image.png
-│       ├── get-success-image.png
-│       └── delete-success-image.png
-├── postman/
-│   └── UnifiedLibraryAPI.postman_collection.json
-├── public/
-│   └── frontend.html
-├── tests/
-│   └── library.test.js
-├── package.json
-├── package-lock.json
-└── README.md
+- `index.js`
+- `data/`
+  - `data.json`
+- `docs/screenshots/`
+  - `post-success-image.png`
+  - `get-success-image.png`
+  - `delete-success-image.png`
+- `postman/UnifiedLibraryAPI.postman_collection.json`
+- `public/frontend.html`
+- `tests/library.test.js`
+- `package.json`
+- `README.md`
