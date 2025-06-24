@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library API Viewer</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .item { margin-bottom: 30px; }
+    img { border-radius: 10px; max-width: 200px; }
+  </style>
+</head>
+<body>
+  <h1>📚 Unified Library Viewer</h1>
+
+  <label for="type">Select Type:</label>
+  <select id="type">
+    <option value="books">Books</option>
+    <option value="movies">Movies</option>
+    <option value="anime">Anime</option>
+    <option value="webseries">Webseries</option>
+  </select>
+
+  <input id="genre" type="text" placeholder="Enter genre (e.g. romance)" />
+  <button onclick="loadData()">Load</button>
+
+  <hr />
+  <div id="result"></div>
+
+  <script>
+    function loadData() {
+      const type = document.getElementById('type').value;
+      const genre = document.getElementById('genre').value.trim().toLowerCase();
+
+      fetch(`http://localhost:8080/${type}/${genre}`)
+        .then(res => {
+          if (!res.ok) throw new Error('Not found');
+          return res.json();
+        })
+        .then(data => {
+          const result = document.getElementById('result');
+          result.innerHTML = '';
+          data.forEach(item => {
+            result.innerHTML += `
+              <div class="item">
+                <h2>${item.title}</h2>
+                <p><strong>By:</strong> ${item.author || item.director || item.creator}</p>
+                <img src="${item.poster}" alt="${item.title}" />
+              </div>
+            `;
+          });
+        })
+        .catch(() => {
+          document.getElementById('result').innerHTML = `<p style="color:red">No results found.</p>`;
+        });
+    }
+  </script>
+</body>
+</html>

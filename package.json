@@ -1,0 +1,30 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PandeySnehil/UnifiedLibraryAPI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PandeySnehil/UnifiedLibraryAPI/issues"
+  },
+  "homepage": "https://github.com/PandeySnehil/UnifiedLibraryAPI#readme",
+  "description": "",
+  "devDependencies": {
+    "jest": "^30.0.2",
+    "supertest": "^7.1.1"
+  }
+}
