@@ -2,11 +2,20 @@
   "books": {
     "fantasy": [
       {
-<<<<<<< HEAD
         "id": 1,
         "title": "Harry Potter",
         "author": "J.K. Rowling",
         "poster": "https://covers.openlibrary.org/b/id/7984916-L.jpg"
+      },
+      {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "id": 1750762265174
+      },
+      {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "id": 1750763052874
       }
     ]
   },
@@ -41,22 +50,3 @@
     ]
   }
 }
-=======
-        "title": "Test Book",
-        "author": "Test Author",
-        "id": 1750765565136
-      },
-      {
-        "title": "Test Book",
-        "author": "Test Author",
-        "id": 1750765580892
-      },
-      {
-        "title": "Test Book",
-        "author": "Test Author",
-        "id": 1750766230120
-      }
-    ]
-  }
-}
->>>>>>> d2ff2fc (Initial commit with working API, tests, and docs)
