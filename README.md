@@ -28,6 +28,10 @@ A simple and flexible RESTful API built with **Node.js** and **Express** that ma
 
 ---
 
+## ✅Test Coverage
+![image](https://github.com/user-attachments/assets/53ce11bb-06d7-4046-8fb9-52268f3b57ad)
+
+
 ## 📁 Folder Structure
 - `index.js`
 - `data/`
